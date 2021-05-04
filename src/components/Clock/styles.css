@@ -1,0 +1,25 @@
+.svg-class {
+  width: 500px;
+  height: 500px;
+}
+
+.circle {
+  fill: none;
+  stroke: black;
+  stroke-width: 1%;
+}
+
+.second-line {
+  stroke: red;
+  stroke-width: 0.5%;
+}
+
+.minute-line {
+  stroke: green;
+  stroke-width: 0.75%;
+}
+
+.hour-line {
+  stroke: blue;
+  stroke-width: 1%;
+}
