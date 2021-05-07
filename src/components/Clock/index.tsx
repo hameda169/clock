@@ -2,8 +2,8 @@ import React from 'react';
 import './styles.css';
 
 const RADIUS_PERCENTAGE = 48;
-const WIDTH = 100;
-const HEIGHT = 100;
+const WIDTH = 1000;
+const HEIGHT = 1000;
 
 function calculateX(value: number): string {
   return `${50 + RADIUS_PERCENTAGE * Math.sin(value * 2 * Math.PI)}%`;
@@ -21,7 +21,8 @@ interface Props {
 
 function ClockComponent({second, minute, hour}: Props): React.ReactElement {
   return <svg preserveAspectRatio='none' className='svg-class' viewBox={`0 0 ${WIDTH} ${HEIGHT}`}>
-    <ellipse className='circle' cx='50%' cy='50%' rx={`${RADIUS_PERCENTAGE}%`} ry={`${RADIUS_PERCENTAGE}%`} />
+    <ellipse className='hour-circle' cx='50%' cy='50%' rx={`${RADIUS_PERCENTAGE}%`} ry={`${RADIUS_PERCENTAGE}%`} />
+    <ellipse className='second-circle' cx='50%' cy='50%' rx={`${RADIUS_PERCENTAGE}%`} ry={`${RADIUS_PERCENTAGE}%`} />
     <line
       className='line hour-line'
       x1='50%'

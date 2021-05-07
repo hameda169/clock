@@ -7,5 +7,5 @@ test('renders correct elements', () => {
   const svgContainer = container.querySelector('svg')!;
 
   expect(svgContainer.querySelectorAll('line').length).toBe(3);
-  expect(svgContainer.querySelectorAll('ellipse').length).toBe(1);
+  expect(svgContainer.querySelectorAll('ellipse').length).toBe(2);
 });

@@ -3,10 +3,22 @@
   height: 500px;
 }
 
-.circle {
+.hour-circle, .second-circle {
   fill: none;
   stroke: black;
   stroke-width: 1%;
+}
+
+.hour-circle {
+  stroke-width: 5%;
+  stroke-dasharray: 1.4%, 23.732%;
+  stroke-dashoffset: 0.8%;
+}
+
+.second-circle {
+  stroke-width: 2%;
+  stroke-dasharray: 0.5%, 4.5264%;
+  stroke-dashoffset: 0.3%;
 }
 
 .second-line {
@@ -16,10 +28,10 @@
 
 .minute-line {
   stroke: green;
-  stroke-width: 0.75%;
+  stroke-width: 0.7%;
 }
 
 .hour-line {
   stroke: blue;
-  stroke-width: 1%;
+  stroke-width: 1.2%;
 }
