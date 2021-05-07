@@ -1,10 +1,9 @@
 import React from 'react';
 import {Clock} from "./components";
+import {useTime} from "./hooks";
 
 function App() {
-  const second = 0;
-  const minute = 20;
-  const hour = 5;
+  const {second, minute, hour} = useTime();
 
   return (
     <div>
