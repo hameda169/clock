@@ -10,15 +10,11 @@
 }
 
 .hour-circle {
-  stroke-width: 5%;
-  stroke-dasharray: 1.4%, 23.732%;
-  stroke-dashoffset: 0.8%;
+  stroke-width: 4%;
 }
 
 .second-circle {
-  stroke-width: 2%;
-  stroke-dasharray: 0.5%, 4.5264%;
-  stroke-dashoffset: 0.3%;
+  stroke-width: 1.5%;
 }
 
 .second-line {
